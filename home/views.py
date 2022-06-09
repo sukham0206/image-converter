@@ -20,8 +20,8 @@ def index(request):
         #email.send_email(str(request.POST.get('email')), index.file.path)
         
         send_email = EmailMessage(
-        'Hello',
         'Thank you for using this service',
+        'Here is your image',
         to=[email]
         )
         send_email.attach_file(index.file.path)
