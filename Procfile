@@ -1,1 +1,1 @@
-web: gunicorn image-converter.wsgi
+web: gunicorn opencv-converter.wsgi
